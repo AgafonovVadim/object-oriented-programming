@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <RootNamespace>ObjectOrientedProgramming.Lab4</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Crayon" />
+      <PackageReference Include="Npgsql" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <TargetFramework>net7.0</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Dev.Platform.Postgres" />
+      <PackageReference Include="Microsoft.Data.SqlClient" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+      <PackageReference Include="Npgsql" />
+      <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Lab5.Application.Abstractions\Lab5.Application.Abstractions.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Lab5.Application.Models">
+        <HintPath>..\Lab5.Application.Models\bin\Debug\net7.0\Lab5.Application.Models.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+</Project>

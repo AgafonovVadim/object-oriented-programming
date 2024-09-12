@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Lab5.Application.Models\Lab5.Application.Models.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Lab5.Application.Models">
+        <HintPath>..\Lab5.Application.Models\bin\Debug\net7.0\Lab5.Application.Models.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection" />
+      <PackageReference Include="Npgsql" />
+    </ItemGroup>
+
+</Project>
